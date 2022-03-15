@@ -16,12 +16,12 @@ Chat :
 </br>
 Login:
 </br>
-<img src="./img/3.PNG" height="326" alt="eslint" title="HTML5"/>
+<img src="./img/3.PNG" height="343" alt="eslint" title="HTML5"/>
 </br>
 signup:
 </br>
-<img src="./img/2.PNG" height="326" alt="eslint" title="HTML5"/>
+<img src="./img/2.PNG" height="348" alt="eslint" title="HTML5"/>
 </br>
 mobile:
 </br>
-<img src="./img/4.PNG" height="326" alt="eslint" title="HTML5"/>
+<img src="./img/4.PNG" height="500" alt="eslint" title="HTML5"/>
