@@ -16,7 +16,7 @@ const Chat = () => {
   // chay dung 1 lan sau khi render
   useEffect(() => {
     async function checkuser() {
-      if (localStorage.getItem("chat-app") == "") {
+      if (localStorage.getItem("chat-app") == null) {
         navigate("/login");
       } else {
         setCurrentUser(await JSON.parse(localStorage.getItem("chat-app")));
