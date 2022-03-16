@@ -101,14 +101,14 @@ const Sidebar = ({ contacts, currentUser, changeChat }) => {
                                     </p>
                                   </div>
                                   <div className="text-truncate">
-                                    Anna:How are you?
+                                    Admin:How are you?
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div className="badge badge-circle badge-primary badge-border-light badge-top-right">
+                            {/* <div className="badge badge-circle badge-primary badge-border-light badge-top-right">
                               <span>3</span>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       );
