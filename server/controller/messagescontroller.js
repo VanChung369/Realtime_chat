@@ -36,3 +36,16 @@ module.exports.add = async (req, res, next) => {
     next(e);
   }
 };
+module.exports.delete = async (req, res, next) => {
+  try {
+    const { from, to, message,id } = req.body;
+    const data = await Messages.deleteOne({
+      _id: id,
+    });
+
+    if (data) return res.json({ msg: "successfully." });
+    else return res.json({ msg: "Failed" });
+  } catch (e) {
+    next(e);
+  }
+};

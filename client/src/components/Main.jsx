@@ -86,7 +86,7 @@ const Main = ({ currentChat, currentUser, socket }) => {
                           <h6 className="text-truncate mb-n1">
                             {currentChat.name}
                           </h6>
-                          <small className="text-muted">35 members</small>
+                          <small className="text-muted">Online</small>
                         </div>
                       </div>
                     </div>
@@ -283,13 +283,13 @@ const Main = ({ currentChat, currentUser, socket }) => {
                                       Share{" "}
                                       <span className="ml-auto fe-share-2"></span>
                                     </a>
-                                    <a
+                                    <div
                                       className="dropdown-item d-flex align-items-center"
-                                      href="#"
+                                  
                                     >
                                       Delete{" "}
                                       <span className="ml-auto fe-trash-2"></span>
-                                    </a>
+                                    </div>
                                   </div>
                                 </div>
                               </div>

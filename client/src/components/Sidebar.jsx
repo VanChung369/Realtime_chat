@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import axios from "axios"
+import React, {useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "../index.css";
@@ -14,6 +13,15 @@ const Sidebar = ({ contacts, currentUser, changeChat }) => {
     setCurrentSelected(index);
     changeChat(contact);
   };
+  const [currentUserImage, setCurrentUserImage] = useState(undefined);
+  const [currentUserName, setCurrentUserName] = useState(undefined);
+  useEffect(() => {
+    if (currentUser) {
+      setCurrentUserImage(currentUser.avatar);
+      setCurrentUserName(currentUser.name);
+    }
+  }, [currentUser]);
+
   return (
     <>
       <div className="sidebar">
@@ -133,12 +141,12 @@ const Sidebar = ({ contacts, currentUser, changeChat }) => {
                         <div className="avatar avatar-xl mb-5">
                           <img
                             className="avatar-img"
-                            src="assets\images\avatars\12.jpg"
+                            src={currentUserImage}
                             alt=""
                           />
                         </div>
 
-                        <h5>OMG</h5>
+                        <h5>{currentUserName}</h5>
                       </div>
                     </div>
                   </div>
