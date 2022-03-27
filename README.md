@@ -22,6 +22,3 @@ signup:
 </br>
 <img src="./img/2.PNG" height="348" alt="eslint" title="HTML5"/>
 </br>
-mobile:
-</br>
-<img src="./img/4.PNG" height="500" alt="eslint" title="HTML5"/>
